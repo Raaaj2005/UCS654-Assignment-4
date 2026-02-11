@@ -26,6 +26,11 @@ The network is designed to model the distribution of the transformed variable $z
 ## PDF Approximation
 After training the GAN, the generator is used to produce a large number of samples ($z_f$). The final probability density $p_h(z)$ is estimated using **Kernel Density Estimation (KDE)** to visualize the distribution the model has learned.
 
+### Generated PDF Plot
+The plot below shows the final distribution learned by the GAN compared to the histogram of the generated samples.
+
+![PDF Plot](pdf_plot.png)
+
 ## Technical Observations
 * **Training Stability**: Details on the convergence of the Generator and Discriminator loss.
 * **Mode Coverage**: Analysis of how well the GAN captures the various peaks in the transformed data.
